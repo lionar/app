@@ -1,4 +1,0 @@
-FallbackResource http://lionar.dev/app/tests/kernel.php
-order allow,deny
-deny from test.com
-allow from all
