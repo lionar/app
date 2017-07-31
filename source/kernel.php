@@ -9,10 +9,12 @@ use http\response;
 class kernel
 {
     private $routes = [ ];
+    private $container = null;
     
-    public function __construct ( array $routes )
+    public function __construct ( array $routes, container $container )
     {
-        $this->routes = $routes;    
+        $this->routes = $routes;
+        $this->container = $container;
     }
     
     public function handle ( request $request ) : response
@@ -25,6 +27,8 @@ class kernel
     
     private function interpret ( $result ) : response
     {
+        // make checking if route is existent 
+        // more explicit.
         return ( $result === null ) ?
             $this->handleMissing ( ) :
             $this->handleArbitrary ( $result );
@@ -33,7 +37,7 @@ class kernel
     private function call ( string $request )
     {
         if ( array_key_exists ( $request, $this->routes ) )
-            return call_user_func ( $this->routes [ $request ] );
+            return $this->container->call ( $this->routes [ $request ] );
     }
     
     private function handleMissing ( ) : response

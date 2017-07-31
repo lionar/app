@@ -5,7 +5,7 @@
 // we could also check if a string contains html, 
 // if it does not send back text/plain
 
-route::get ( '/', function ( )
+route::get ( '/', function ( view $view )
 {
     return $view->make ( 'overview' );
 } );

@@ -1,7 +1,7 @@
 {
 	"name": "lionar/app",
 	"version": "0.0.1",
-	"description": ".",
+	"description": "A base to build well architectured application's.",
 	"keywords": [ "Lionar", "App" ],
 	"license": "MIT",
 	"authors": [
@@ -12,6 +12,7 @@
 		}
 	],
 	"require" : {
+		"illuminate/container": "*",
 		"lionar/http": "*",
 		"lionar/support": "*"
   	},
