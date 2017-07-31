@@ -2,11 +2,11 @@
 
 //use app\kernel;
 //use http\request;
-//
+
 //require __DIR__ . '/../vendor/autoload.php';
 
 $data = [ 'name' => 'Bench press' ];
-header('Content-Type: application/json; charset=utf-8');
+header('Content-Type: application/json');
 echo json_encode($data);
 
 
