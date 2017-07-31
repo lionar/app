@@ -1,0 +1,103 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "fd3fa1a5bdcf2a8907fcfc9623561b0f",
+    "packages": [
+        {
+            "name": "lionar/http",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lionar/http.git",
+                "reference": "7b32682ed6607c80b9afe2d7aa06b72f843289b4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lionar/http/zipball/7b32682ed6607c80b9afe2d7aa06b72f843289b4",
+                "reference": "7b32682ed6607c80b9afe2d7aa06b72f843289b4",
+                "shasum": ""
+            },
+            "require": {
+                "lionar/support": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "http\\": "source"
+                },
+                "files": [
+                    "helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Aron Wouters",
+                    "email": "lionar@mail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Simple library for working with the HTTP protocol.",
+            "keywords": [
+                "http",
+                "lionar"
+            ],
+            "time": "2017-07-31T09:41:53+00:00"
+        },
+        {
+            "name": "lionar/support",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lionar/support.git",
+                "reference": "1c22c814d1e939a1ed4aa924e065d00cf7067182"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lionar/support/zipball/1c22c814d1e939a1ed4aa924e065d00cf7067182",
+                "reference": "1c22c814d1e939a1ed4aa924e065d00cf7067182",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "": "source"
+                },
+                "files": [
+                    "source/helpers/filesystem.php",
+                    "source/helpers/text.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Aron Wouters",
+                    "email": "lionar@mail.com",
+                    "role": "Developer"
+                }
+            ],
+            "keywords": [
+                "lionar",
+                "support"
+            ],
+            "time": "2017-07-31T09:37:13+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

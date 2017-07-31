@@ -1,0 +1,35 @@
+{
+	"name": "lionar/app",
+	"version": "0.0.1",
+	"description": ".",
+	"keywords": [ "Lionar", "App" ],
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Aron Wouters",
+			"email": "lionar@mail.com",
+			"role": "Developer"
+		}
+	],
+	"require" : {
+		"lionar/http": "*",
+		"lionar/support": "*"
+  	},
+	"require-dev": {
+		
+	},
+	"autoload": {
+    	"psr-4": {
+			"app\\": "source"
+   	 	}
+  	},
+	"autoload-dev": {
+    	"psr-4": {
+			"app\\tests\\": "tests"
+		}
+	},
+	"config": {
+		"preferred-install": "dist"
+	},
+	"minimum-stability": "dev"
+}
