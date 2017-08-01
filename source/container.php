@@ -38,7 +38,7 @@ class container extends base
 
 	public function fulfill ( string $abstract )
 	{
-		$response = $this->make ( $abstract );
+		$response = $this->call ( $this->binders [ $abstract ] );
 		return $this->call ( $this->statuses->match ( $response [ 0 ] ), $response [ 1 ] );
 	}
 }
