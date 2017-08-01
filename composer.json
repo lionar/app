@@ -25,7 +25,10 @@
     	"psr-4": {
     		"": "source/facades",
 			"app\\": "source"
-   	 	}
+   	 	},
+   	 	"files": [
+   	 		"readability.php"
+   	 	]
   	},
 	"autoload-dev": {
     	"psr-4": {
