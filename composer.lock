@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "e70d2c6f3091c565b5b56f044267ea81",
+    "content-hash": "c82621202c19253bef68eeb7de8ab4b4",
     "packages": [
         {
             "name": "illuminate/container",
@@ -56,12 +56,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/contracts.git",
-                "reference": "0bc48b5cc6d924985b9febf5cb78e9c84ddc5ba2"
+                "reference": "1cc9ce9a808bb8931e716133a15457e8a2f58421"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/contracts/zipball/0bc48b5cc6d924985b9febf5cb78e9c84ddc5ba2",
-                "reference": "0bc48b5cc6d924985b9febf5cb78e9c84ddc5ba2",
+                "url": "https://api.github.com/repos/illuminate/contracts/zipball/1cc9ce9a808bb8931e716133a15457e8a2f58421",
+                "reference": "1cc9ce9a808bb8931e716133a15457e8a2f58421",
                 "shasum": ""
             },
             "require": {
@@ -92,7 +92,48 @@
             ],
             "description": "The Illuminate Contracts package.",
             "homepage": "https://laravel.com",
-            "time": "2017-07-27T13:21:54+00:00"
+            "time": "2017-07-31T15:08:54+00:00"
+        },
+        {
+            "name": "lionar/agreements",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lionar/agreements.git",
+                "reference": "9c15a1a30c3fb82e9414d2d110427c528fa581bc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lionar/agreements/zipball/9c15a1a30c3fb82e9414d2d110427c528fa581bc",
+                "reference": "9c15a1a30c3fb82e9414d2d110427c528fa581bc",
+                "shasum": ""
+            },
+            "require": {
+                "lionar/support": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "agreed\\": "source"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Aron Wouters",
+                    "email": "lionar@mail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Interfaces for technical components.",
+            "keywords": [
+                "Agreements",
+                "lionar"
+            ],
+            "time": "2017-07-28T09:01:03+00:00"
         },
         {
             "name": "lionar/http",
@@ -137,6 +178,85 @@
                 "lionar"
             ],
             "time": "2017-07-31T09:41:53+00:00"
+        },
+        {
+            "name": "lionar/input",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lionar/input.git",
+                "reference": "eb219a2a922555a9ba315b5c044b2b895cfc194e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lionar/input/zipball/eb219a2a922555a9ba315b5c044b2b895cfc194e",
+                "reference": "eb219a2a922555a9ba315b5c044b2b895cfc194e",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "input\\": "source"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Aron Wouters",
+                    "email": "lionar@mail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A simple input package.",
+            "keywords": [
+                "input",
+                "lionar"
+            ],
+            "time": "2017-06-30T20:28:47+00:00"
+        },
+        {
+            "name": "lionar/statuses",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lionar/statuses.git",
+                "reference": "140f5fc79beb0e01e99e93bfa2c1fa13490c8e98"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lionar/statuses/zipball/140f5fc79beb0e01e99e93bfa2c1fa13490c8e98",
+                "reference": "140f5fc79beb0e01e99e93bfa2c1fa13490c8e98",
+                "shasum": ""
+            },
+            "require": {
+                "lionar/agreements": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "statuses\\": "source"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Aron Wouters",
+                    "email": "lionar@mail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Mapping from status to closures.",
+            "keywords": [
+                "lionar",
+                "statuses"
+            ],
+            "time": "2017-06-28T20:56:29+00:00"
         },
         {
             "name": "lionar/support",

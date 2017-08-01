@@ -5,6 +5,9 @@ use app\kernel;
 use http\redirector;
 use http\request;
 
+use statuses\statuses;
+use input\collection as input;
+
 require __DIR__ . '/../vendor/autoload.php';
 
 class exercise
@@ -27,7 +30,12 @@ class trainer
 	}
 }
 
-$container = new container ( [ 'name' => 'Bench press' ] );
+$status = new statuses;
+$input = new input;
+
+$input->name = 'Bench press';
+
+$container = new container ( $status, $input );
 $container->binding ( 'exercise', function ( $name )
 {
 	return new exercise ( $name );
