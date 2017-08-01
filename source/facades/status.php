@@ -4,6 +4,6 @@ class status extends facade
 {
 	public static function getFacadeAccessor ( ) : string
 	{
-		return 'status';
+		return 'statuses';
 	}
 }
