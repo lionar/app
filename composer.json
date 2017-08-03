@@ -13,7 +13,6 @@
 	],
 	"require" : {
 		"illuminate/container": "*",
-		"lionar/http": "*",
 		"lionar/input": "*",
 		"lionar/statuses": "*",
 		"lionar/support": "*"
