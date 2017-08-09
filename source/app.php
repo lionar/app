@@ -50,6 +50,6 @@ class app extends container
 	public function fulfill ( string $abstract )
 	{
 		$response = $this->call ( $this->binders [ $abstract ] );
-		return $this->call ( $this->statuses->match ( $response [ 0 ] ), $response [ 1 ] );
+		return $this->call ( $this [ 'statuses' ]->match ( $response [ 0 ] ), $response [ 1 ] );
 	}
 }
