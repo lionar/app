@@ -13,17 +13,18 @@
 	],
 	"require" : {
 		"illuminate/container": "*",
-		"lionar/input": "*",
-		"lionar/statuses": "*",
+		"lionar/agreements": "*",
 		"lionar/support": "*"
   	},
 	"require-dev": {
-		
+		"lionar/input": "*",
+		"lionar/routing": "*",
+		"lionar/statuses": "*",
+		"lionar/testing": "*"
 	},
 	"autoload": {
     	"psr-4": {
-    		"": "source/facades",
-			"app\\": "source"
+			"firestark\\": "source"
    	 	},
    	 	"files": [
    	 		
@@ -31,7 +32,7 @@
   	},
 	"autoload-dev": {
     	"psr-4": {
-			"app\\tests\\": "tests"
+			"firestark\\tests\\": "tests"
 		}
 	},
 	"config": {
