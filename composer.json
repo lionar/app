@@ -27,7 +27,7 @@
 			"firestark\\": "source"
    	 	},
    	 	"files": [
-   	 		
+   	 		"helpers.php"
    	 	]
   	},
 	"autoload-dev": {
